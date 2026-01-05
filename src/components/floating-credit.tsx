@@ -28,7 +28,7 @@ export function FloatingCredit() {
       }}
     >
       <Card className="shadow-lg border-primary/20 bg-background/95 backdrop-blur-sm">
-        <CardContent className="p-3 flex items-center gap-3">
+        <CardContent className="py-0 px-3 flex items-center gap-3">
           <Avatar className="h-10 w-10 ring-2 ring-primary/20">
             <AvatarImage src="/avatar.png" alt="Samy DJEMILI" />
             <AvatarFallback className="bg-primary/10 text-primary font-bold text-sm">SD</AvatarFallback>
@@ -43,7 +43,7 @@ export function FloatingCredit() {
             asChild
             size="sm"
             variant="outline"
-            className="ml-1 gap-1 text-xs h-8"
+            className="ml-1 gap-1 text-xs h-7"
           >
             <a
               href="https://www.samy.djemili.infyneis.com"
