@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f2fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phone-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="200" cy="150" r="120" fill="url(#bg-gradient)" opacity="0.5"/>
+
+  <!-- Person silhouette -->
+  <ellipse cx="160" cy="220" rx="40" ry="15" fill="#cbd5e1" opacity="0.5"/>
+  <circle cx="160" cy="120" r="25" fill="#64748b"/>
+  <path d="M130 145 Q160 180 190 145 L185 220 L135 220 Z" fill="#64748b"/>
+
+  <!-- Phone in hand -->
+  <rect x="175" y="130" width="50" height="80" rx="8" fill="url(#phone-gradient)"/>
+  <rect x="180" y="138" width="40" height="60" rx="2" fill="#0ea5e9"/>
+
+  <!-- Screen glow effect -->
+  <ellipse cx="200" cy="168" rx="30" ry="40" fill="#0ea5e9" opacity="0.2">
+    <animate attributeName="opacity" values="0.2;0.4;0.2" dur="2s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Clock -->
+  <circle cx="290" cy="100" r="35" fill="#fff" stroke="#e2e8f0" stroke-width="3"/>
+  <circle cx="290" cy="100" r="30" fill="#fff"/>
+  <line x1="290" y1="100" x2="290" y2="80" stroke="#1e293b" stroke-width="3" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate" from="0 290 100" to="360 290 100" dur="60s" repeatCount="indefinite"/>
+  </line>
+  <line x1="290" y1="100" x2="305" y2="100" stroke="#ef4444" stroke-width="2" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate" from="0 290 100" to="360 290 100" dur="5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="290" cy="100" r="3" fill="#1e293b"/>
+
+  <!-- Alert/notification icons floating -->
+  <g opacity="0.7">
+    <circle cx="250" cy="60" r="8" fill="#ef4444">
+      <animate attributeName="cy" values="60;55;60" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="250" y="64" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">!</text>
+  </g>
+
+  <g opacity="0.7">
+    <circle cx="320" cy="170" r="8" fill="#f59e0b">
+      <animate attributeName="cy" values="170;165;170" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="320" y="174" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">3</text>
+  </g>
+
+  <!-- Text reminder -->
+  <text x="200" y="280" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">
+    Replace with Storyset illustration
+  </text>
+</svg>
