@@ -7,6 +7,7 @@ import { ScreenTimeInput } from "@/components/screen-time-input";
 import { StatsDisplay } from "@/components/stats-display";
 import { FloatingLocaleSwitcher } from "@/components/floating-locale-switcher";
 import { FloatingCredit } from "@/components/floating-credit";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { calculateScreenTimeStats, getMessageLevel } from "@/lib/calculations";
 import { ClockIcon, type ClockIconHandle } from "@/components/ui/clock";
 import { HourglassIcon, type HourglassIconHandle } from "@/components/ui/hourglass";
@@ -95,6 +96,7 @@ export default function HomePage() {
       </footer>
 
       <FloatingCredit />
+      <ThemeToggle />
       <FloatingLocaleSwitcher />
     </div>
   );
