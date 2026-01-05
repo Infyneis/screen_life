@@ -218,6 +218,6 @@ MIT
 
 **Take control of your time. Live more.** 🌱
 
-Made with ❤️ as part of the [Year Coding Challenge](https://github.com/Infyneis)
+Made with ❤️ by [Samy DJEMILI - Infyneis](https://www.samy.djemili.infyneis.com)
 
 </div>
