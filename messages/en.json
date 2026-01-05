@@ -39,5 +39,9 @@
   },
   "locale": {
     "switch": "Français"
+  },
+  "credit": {
+    "createdBy": "Created by",
+    "portfolio": "Portfolio"
   }
 }

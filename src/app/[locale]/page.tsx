@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ScreenTimeInput } from "@/components/screen-time-input";
 import { StatsDisplay } from "@/components/stats-display";
 import { FloatingLocaleSwitcher } from "@/components/floating-locale-switcher";
+import { FloatingCredit } from "@/components/floating-credit";
 import { calculateScreenTimeStats, getMessageLevel } from "@/lib/calculations";
 import { ClockIcon, type ClockIconHandle } from "@/components/ui/clock";
 import { HourglassIcon, type HourglassIconHandle } from "@/components/ui/hourglass";
@@ -93,6 +94,7 @@ export default function HomePage() {
         <p>Take control of your time. Live more.</p>
       </footer>
 
+      <FloatingCredit />
       <FloatingLocaleSwitcher />
     </div>
   );
