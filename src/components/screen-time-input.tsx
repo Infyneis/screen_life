@@ -68,7 +68,7 @@ export function ScreenTimeInput({
 
       <div className="text-center">
         <span className="text-4xl font-bold">
-          {hours}h {minutes.toString().padStart(2, "0")}m
+          {hours}h{minutes.toString().padStart(2, "0")}m
         </span>
         <span className="text-muted-foreground ml-2">/ {t("label").toLowerCase()}</span>
       </div>

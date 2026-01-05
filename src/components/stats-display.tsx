@@ -55,12 +55,30 @@ export function StatsDisplay({ stats, messageLevel }: StatsDisplayProps) {
     }
   };
 
-  const getPercentColor = (percent: number) => {
-    if (percent <= 25) return "text-green-600 dark:text-green-400";
-    if (percent <= 50) return "text-yellow-600 dark:text-yellow-400";
-    if (percent <= 75) return "text-orange-600 dark:text-orange-400";
-    return "text-red-600 dark:text-red-400";
+  const getPercentStyles = (percent: number) => {
+    if (percent <= 25) return {
+      card: "bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950 dark:to-green-900 border-green-200 dark:border-green-800",
+      number: "text-green-600 dark:text-green-400",
+      label: "text-green-600 dark:text-green-400",
+    };
+    if (percent <= 50) return {
+      card: "bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-yellow-950 dark:to-yellow-900 border-yellow-200 dark:border-yellow-800",
+      number: "text-yellow-600 dark:text-yellow-400",
+      label: "text-yellow-600 dark:text-yellow-400",
+    };
+    if (percent <= 75) return {
+      card: "bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-950 dark:to-orange-900 border-orange-200 dark:border-orange-800",
+      number: "text-orange-600 dark:text-orange-400",
+      label: "text-orange-600 dark:text-orange-400",
+    };
+    return {
+      card: "bg-gradient-to-br from-red-50 to-red-100 dark:from-red-950 dark:to-red-900 border-red-200 dark:border-red-800",
+      number: "text-red-600 dark:text-red-400",
+      label: "text-red-600 dark:text-red-400",
+    };
   };
+
+  const percentStyles = getPercentStyles(stats.freeTimePercent);
 
   return (
     <div className="space-y-6">
@@ -93,12 +111,12 @@ export function StatsDisplay({ stats, messageLevel }: StatsDisplayProps) {
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-rose-50 to-rose-100 dark:from-rose-950 dark:to-rose-900 border-rose-200 dark:border-rose-800">
+        <Card className={percentStyles.card}>
           <CardContent className="py-6 px-4 text-center flex flex-col items-center justify-center min-h-[140px]">
-            <div className={`text-3xl md:text-4xl font-bold ${getPercentColor(stats.freeTimePercent)}`}>
+            <div className={`text-3xl md:text-4xl font-bold ${percentStyles.number}`}>
               <AnimatedNumber value={stats.freeTimePercent} />%
             </div>
-            <p className="text-sm text-rose-600 dark:text-rose-400 mt-1">
+            <p className={`text-sm mt-1 ${percentStyles.label}`}>
               {t("freeTime.label")}
             </p>
           </CardContent>
