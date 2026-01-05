@@ -66,8 +66,8 @@ export function StatsDisplay({ stats, messageLevel }: StatsDisplayProps) {
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <Card className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900 border-blue-200 dark:border-blue-800">
-          <CardContent className="pt-6 text-center">
-            <div className="text-4xl font-bold text-blue-700 dark:text-blue-300">
+          <CardContent className="py-6 px-4 text-center flex flex-col items-center justify-center min-h-[140px]">
+            <div className="text-3xl md:text-4xl font-bold text-blue-700 dark:text-blue-300">
               <AnimatedNumber value={stats.hoursPerWeek} decimals={1} />
             </div>
             <p className="text-sm font-bold uppercase text-blue-600 dark:text-blue-400 mt-1">
@@ -80,8 +80,8 @@ export function StatsDisplay({ stats, messageLevel }: StatsDisplayProps) {
         </Card>
 
         <Card className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950 dark:to-purple-900 border-purple-200 dark:border-purple-800">
-          <CardContent className="pt-6 text-center">
-            <div className="text-4xl font-bold text-purple-700 dark:text-purple-300">
+          <CardContent className="py-6 px-4 text-center flex flex-col items-center justify-center min-h-[140px]">
+            <div className="text-3xl md:text-4xl font-bold text-purple-700 dark:text-purple-300">
               <AnimatedNumber value={stats.daysPerYear} decimals={1} />
             </div>
             <p className="text-sm font-bold uppercase text-purple-600 dark:text-purple-400 mt-1">
@@ -94,8 +94,8 @@ export function StatsDisplay({ stats, messageLevel }: StatsDisplayProps) {
         </Card>
 
         <Card className="bg-gradient-to-br from-rose-50 to-rose-100 dark:from-rose-950 dark:to-rose-900 border-rose-200 dark:border-rose-800">
-          <CardContent className="pt-6 text-center">
-            <div className={`text-4xl font-bold ${getPercentColor(stats.freeTimePercent)}`}>
+          <CardContent className="py-6 px-4 text-center flex flex-col items-center justify-center min-h-[140px]">
+            <div className={`text-3xl md:text-4xl font-bold ${getPercentColor(stats.freeTimePercent)}`}>
               <AnimatedNumber value={stats.freeTimePercent} />%
             </div>
             <p className="text-sm text-rose-600 dark:text-rose-400 mt-1">
