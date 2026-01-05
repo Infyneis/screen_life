@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "title": "Screen Life - Combien de temps perdez-vous ?",
+    "description": "Calculez combien de votre vie précieuse est passée sur les écrans et motivez-vous à changer"
+  },
+  "hero": {
+    "title": "Screen Life",
+    "subtitle": "Découvrez combien de votre vie passe sur les écrans"
+  },
+  "input": {
+    "label": "Votre temps d'écran quotidien",
+    "hours": "heures",
+    "minutes": "minutes"
+  },
+  "stats": {
+    "perWeek": {
+      "unit": "heures",
+      "label": "par semaine"
+    },
+    "perYear": {
+      "unit": "jours",
+      "label": "par an"
+    },
+    "freeTime": {
+      "label": "de votre temps libre"
+    },
+    "note": "Basé sur 8 heures de temps libre par jour (en comptant le sommeil et le travail/études)"
+  },
+  "message": {
+    "none": "Entrez votre temps d'écran quotidien pour voir l'impact.",
+    "low": "Pas mal ! Vous avez de bonnes habitudes numériques. Continuez !",
+    "medium": "C'est significatif. Pensez à limiter votre temps d'écran.",
+    "high": "C'est beaucoup de temps d'écran. Votre futur vous remerciera de réduire.",
+    "extreme": "Wow ! Vous passez la majorité de votre temps libre sur les écrans. Prêt à reprendre votre vie ?"
+  },
+  "cta": {
+    "title": "Prêt à reprendre votre temps ?",
+    "description": "Les petits changements s'additionnent. 30 minutes de moins par jour vous rendent 7,5 jours par an."
+  },
+  "locale": {
+    "switch": "English"
+  }
+}

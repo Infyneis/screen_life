@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "title": "Screen Life - How Much Time Are You Losing?",
+    "description": "Calculate how much of your precious life is spent on screens and get motivated to change"
+  },
+  "hero": {
+    "title": "Screen Life",
+    "subtitle": "Discover how much of your life goes to screens"
+  },
+  "input": {
+    "label": "Your daily screen time",
+    "hours": "hours",
+    "minutes": "minutes"
+  },
+  "stats": {
+    "perWeek": {
+      "unit": "hours",
+      "label": "per week"
+    },
+    "perYear": {
+      "unit": "days",
+      "label": "per year"
+    },
+    "freeTime": {
+      "label": "of your free time"
+    },
+    "note": "Based on 8 hours of free time per day (accounting for sleep and work/school)"
+  },
+  "message": {
+    "none": "Enter your daily screen time to see the impact.",
+    "low": "Not bad! You have healthy digital habits. Keep it up!",
+    "medium": "That's significant. Consider setting some screen time limits.",
+    "high": "That's a lot of screen time. Your future self will thank you for cutting back.",
+    "extreme": "Whoa! You're spending most of your free time on screens. Time to reclaim your life?"
+  },
+  "cta": {
+    "title": "Ready to take back your time?",
+    "description": "Small changes add up. Even 30 minutes less per day gives you back 7.5 days per year."
+  },
+  "locale": {
+    "switch": "Français"
+  }
+}
